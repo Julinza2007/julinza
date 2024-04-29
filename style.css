@@ -1,0 +1,52 @@
+body {
+background-color: black;
+}   
+
+#titulo {
+    color:white;
+    text-align: center;
+}
+
+#pessi{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#pessi img {
+    border-radius: 50px;
+    width: 500px;
+    height: 450px;
+}
+
+.pessi_gif {
+text-align: center;
+padding: 30px;
+
+}
+
+.pessi_gif img {
+border-radius: 25px;
+width: 400px;
+height: 300px;
+}
+
+
+#ñessi {
+color:white;    
+}
+
+#ñessi img {
+    width: 600px;
+}
+
+#mechikito {
+text-align: center;
+color:white;
+}
+
+#mechikito img {
+    width: 400px;
+    height: 300px;
+    border-radius:40px;
+}
+
