@@ -17,17 +17,7 @@
 
     <center><button id="startButton">Iniciar llamada</button></center>
     <audio id="porkcito" src="llamada-meme.mp3" autoplay loop style="display: none;"></audio>
-    
-    <script>
-        document.getElementById('startButton').addEventListener('click', function() {
-            var audio = document.getElementById('porkcito');
-            audio.currentTime = 0; // Reiniciar el audio si ya se está reproduciendo
-            audio.volume = 0.6; // Establecer el volumen al 60%
-            audio.style.display = 'block'; // Mostrar el audio
-            audio.play();
-            document.getElementById('startButton').style.display = 'none'; // Ocultar el botón después de iniciar la reproducción
-        });
-    </script>
+
     
 </body>
 </html>
