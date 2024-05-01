@@ -70,11 +70,6 @@ body {
 
 #ñessi img {
     width: 600px;
-    transition: opacity 0.3s ease; /* Transición suave al hacer hover */
-}
-
-#ñessi img:hover {
-    opacity: 0.8; /* Reducir opacidad al hacer hover */
 }
 
 #mechikito {
@@ -86,7 +81,7 @@ body {
     width: 400px;
     height: 300px;
     border-radius:40px;
-    transition: transform 3s ease;
+    transition: transform 0.3s ease;
 }
 
 
