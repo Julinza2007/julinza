@@ -1,6 +1,30 @@
 body {
-background-color: black;
-}   
+    background-color: #000; /* Color de fondo negro */
+}
+
+/* Estrella */
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff; /* Color de las estrellas blanco */
+    opacity: 0; /* Inicialmente invisible */
+    border-radius: 50%; /* Forma redondeada */
+    animation: parpadeo-estrellas 3s infinite; /* Animación de parpadeo */
+}
+
+/* Animación de parpadeo */
+@keyframes parpadeo-estrellas {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
 #titulo {
     color:white;
