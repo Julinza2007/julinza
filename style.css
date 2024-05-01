@@ -26,7 +26,7 @@ body {
     }
 }
 
-#titulo {
+.titulo {
     color:white;
     text-align: center;
 }
@@ -40,37 +40,59 @@ body {
     border-radius: 50px;
     width: 500px;
     height: 450px;
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
 }
 
-.pessi_gif {
-text-align: center;
-padding: 30px;
-
+#pessi img:hover {
+    transform: scale(1.1); /* Aumentar tamaño al hacer hover */
 }
 
-.pessi_gif img {
-border-radius: 25px;
-width: 400px;
-height: 300px;
+.pessi {
+    color:white;
+    text-align: center;
+    padding: 30px;
 }
 
+.pessi img {
+    border-radius: 25px;
+    width: 400px;
+    height: 300px;
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.pessi img:hover {
+    transform: scale(1.1); /* Aumentar tamaño al hacer hover */
+}
 
 #ñessi {
-color:white;    
+    color:white;    
 }
 
 #ñessi img {
     width: 600px;
+    transition: opacity 0.3s ease; /* Transición suave al hacer hover */
+}
+
+#ñessi img:hover {
+    opacity: 0.8; /* Reducir opacidad al hacer hover */
 }
 
 #mechikito {
-text-align: center;
-color:white;
+    text-align: center;
+    color:white;
 }
 
 #mechikito img {
     width: 400px;
     height: 300px;
     border-radius:40px;
+    transition: filter 0.3s ease; /* Transición suave al hacer hover */
 }
 
+#mechikito img:hover {
+    filter: grayscale(100%); /* Convertir a escala de grises al hacer hover */
+}
+
+a {
+    color:white;
+}
