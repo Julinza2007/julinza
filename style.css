@@ -89,6 +89,7 @@ body {
     transition: transform 3s ease;
 }
 
+
 #mechikito img:hover {
     transform: scale(1.2);
 }
