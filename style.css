@@ -93,6 +93,13 @@ body {
     filter: grayscale(100%); /* Convertir a escala de grises al hacer hover */
 }
 
-a {
-    color:white;
+a{
+    margin-left:10px;
+}
+a img{
+    transition: transform 1s ease;
+}
+
+a img:hover{
+    transform: scale(1.9);
 }
