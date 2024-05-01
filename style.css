@@ -86,13 +86,20 @@ body {
     width: 400px;
     height: 300px;
     border-radius:40px;
-    transition: filter 0.3s ease; /* Transición suave al hacer hover */
+    transition: transform 3s ease;
 }
 
 #mechikito img:hover {
-    filter: grayscale(100%); /* Convertir a escala de grises al hacer hover */
+    transform: scale(1.2);
 }
 
-a {
-    color:white;
+a{
+    margin-left:10px;
+}
+a img{
+    transition: transform 1s ease;
+}
+
+a img:hover{
+    transform: scale(1.9);
 }
