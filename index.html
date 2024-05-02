@@ -15,12 +15,13 @@
     </div>
 
     <div class="pessi">
-        <img onclick="reproducirAudio('audio1')" src="https://media.tenor.com/cp630CngR9oAAAAM/lionel-messi-pepsi.gif">
+        <img  onclick="reproducirAudio('audio1'); reiniciarAnimacion('gifPessi', 'https://media.tenor.com/cp630CngR9oAAAAM/lionel-messi-pepsi.gif')" id="gifPessi" src="https://media.tenor.com/cp630CngR9oAAAAM/lionel-messi-pepsi.gif" onload="detenerAnimacion(this)">
     </div>
+    
 
     <div class="pessi">
         <h1>ÑESSI</h1>
-        <img id="ñessi" onclick="reproducirAudio('audio3')" src="https://media.tenor.com/tae8y0GuXrAAAAAM/messi-que-mira-bobo-que-mira-bobo.gif">
+        <img id="ñessi" onclick="reproducirAudio('audio4'), reiniciarAnimacion('gifnessi', 'https://media.tenor.com/tae8y0GuXrAAAAAM/messi-que-mira-bobo-que-mira-bobo.gif')" id="gifnessi" src="https://media.tenor.com/tae8y0GuXrAAAAAM/messi-que-mira-bobo-que-mira-bobo.gif" onload="detenerAnimacion(this)">
     </div>
 
     <div id="mechikito">
@@ -36,7 +37,7 @@
     <audio id="audio1" src="penalty.mp3"></audio>
     <audio id="audio2" src="mensaje.mp3"></audio>
     <audio id="audio3" src="pessi.mp3"></audio>
-
+    <audio id="audio4" src="11 Que miras bobo con diferentes efectos de sonido - Messi-[AudioTrimmer.com].mp3"></audio>
     <script>
         function reproducirAudio(idAudio) {
             var audio = document.getElementById(idAudio);
@@ -45,7 +46,16 @@
         }
     </script>
 
-    <script>
+<script>
+    function reiniciarAnimacion(idImagen, nuevaURL) {
+        var imagen = document.getElementById(idImagen);
+        imagen.src = nuevaURL;
+    }
+
+
+</script>
+
+<script>
         // Generar estrellas aleatorias
         for (let i = 0; i < 50; i++) {
             let star = document.createElement('div');
