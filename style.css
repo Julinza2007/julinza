@@ -1,0 +1,101 @@
+body {
+    background-color: #000; /* Color de fondo negro */
+}
+
+/* Estrella */
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #fff; /* Color de las estrellas blanco */
+    opacity: 0; /* Inicialmente invisible */
+    border-radius: 50%; /* Forma redondeada */
+    animation: parpadeo-estrellas 3s infinite; /* Animación de parpadeo */
+}
+
+/* Animación de parpadeo */
+@keyframes parpadeo-estrellas {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.titulo {
+    color:white;
+    text-align: center;
+}
+
+#pessi{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#pessi img {
+    border-radius: 50px;
+    width: 500px;
+    height: 450px;
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+#pessi img:hover {
+    transform: scale(1.1); /* Aumentar tamaño al hacer hover */
+}
+
+.pessi {
+    color:white;
+    text-align: center;
+    padding: 30px;
+}
+
+.pessi img {
+    border-radius: 25px;
+    width: 400px;
+    height: 300px;
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+.pessi img:hover {
+    transform: scale(1.1); /* Aumentar tamaño al hacer hover */
+}
+
+#ñessi {
+    color:white;    
+}
+
+#ñessi img {
+    width: 600px;
+}
+
+#mechikito {
+    text-align: center;
+    color:white;
+}
+
+#mechikito img {
+    width: 400px;
+    height: 300px;
+    border-radius:40px;
+    transition: transform 0.3s ease;
+}
+
+
+#mechikito img:hover {
+    transform: scale(1.2);
+}
+
+a{
+    margin-left:10px;
+}
+a img{
+    transition: transform 1s ease;
+}
+
+a img:hover{
+    transform: scale(1.9);
+}

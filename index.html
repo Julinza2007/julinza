@@ -1,1 +1,74 @@
-jajajaja
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Julinza</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1>PESSI</h1>
+    </div>
+    <div id="pessi">
+        <img onclick="reproducirAudio('audio3')" src="https://yt3.googleusercontent.com/nv_wjYn2KNhxo8NSKa9jbIQ36L5oyhy1CXAVvJfHoRsdUaq8MeFdJLIgxzzLBW9mXSOGPPWq=s900-c-k-c0x00ffffff-no-rj">
+    </div>
+
+    <div class="pessi">
+        <img  onclick="reproducirAudio('audio1'); reiniciarAnimacion('gifPessi', 'https://media.tenor.com/cp630CngR9oAAAAM/lionel-messi-pepsi.gif')" id="gifPessi" src="https://media.tenor.com/cp630CngR9oAAAAM/lionel-messi-pepsi.gif" onload="detenerAnimacion(this)">
+    </div>
+    
+
+    <div class="pessi">
+        <h1>ÑESSI</h1>
+        <img id="ñessi" onclick="reproducirAudio('audio4'), reiniciarAnimacion('gifnessi', 'https://media.tenor.com/tae8y0GuXrAAAAAM/messi-que-mira-bobo-que-mira-bobo.gif')" id="gifnessi" src="https://media.tenor.com/tae8y0GuXrAAAAAM/messi-que-mira-bobo-que-mira-bobo.gif" onload="detenerAnimacion(this)">
+    </div>
+
+    <div id="mechikito">
+        <h1>Messi chiquito</h1>
+        <img onclick="reproducirAudio('audio3')" src="https://images7.memedroid.com/images/UPLOADED677/65f0fe83596fb.jpeg">
+    </div>
+
+    <div class="pessi">
+                <h1>Messi de San Lorenzo</h1>
+        <img onclick="reproducirAudio('audio2')" src="https://www.ole.com.ar/2020/08/25/J1j5pQRBQ_720x0__1.jpg">
+    </div>
+
+    <audio id="audio1" src="penalty.mp3"></audio>
+    <audio id="audio2" src="mensaje.mp3"></audio>
+    <audio id="audio3" src="pessi.mp3"></audio>
+    <audio id="audio4" src="11 Que miras bobo con diferentes efectos de sonido - Messi-[AudioTrimmer.com].mp3"></audio>
+    <script>
+        function reproducirAudio(idAudio) {
+            var audio = document.getElementById(idAudio);
+            audio.currentTime = 0; // Reiniciar el audio si ya se está reproduciendo
+            audio.play();
+        }
+    </script>
+
+<script>
+    function reiniciarAnimacion(idImagen, nuevaURL) {
+        var imagen = document.getElementById(idImagen);
+        imagen.src = nuevaURL;
+    }
+
+
+</script>
+
+<script>
+        // Generar estrellas aleatorias
+        for (let i = 0; i < 50; i++) {
+            let star = document.createElement('div');
+            star.className = 'star';
+            star.style.top = Math.random() * 100 + '%'; /* Posición vertical aleatoria */
+            star.style.left = Math.random() * 100 + '%'; /* Posición horizontal aleatoria */
+            star.style.animationDelay = Math.random() * 5 + 's'; /* Retraso aleatorio en la animación */
+            document.body.appendChild(star);
+        }
+    </script>
+
+    <nav>
+    <a href="john pork/pork.html"><img src="https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/1024px/1f437.png" width="32px" height="32px"></a>
+    </nav>
+</body>
+</html>

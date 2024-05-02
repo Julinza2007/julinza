@@ -1,0 +1,15 @@
+body{
+    background-image: url('https://i.kym-cdn.com/entries/icons/facebook/000/044/265/jpcover.jpg');
+    background-color: black;
+}
+
+.pork {
+    color:salmon;
+    text-align: center;
+    padding:100px;
+}
+
+.titulo {
+    color:black;
+    text-align: center;
+}
