@@ -14,7 +14,6 @@ body{
 
 #aceptar {
 margin-left: 650px;
-display:inline-block;
 }
 
 
@@ -23,8 +22,11 @@ display:inline-block;
 }
 
 #colgar {
-    margin-left: 425px;
-    display:inline-block;
+    margin-left: 440px;
+}
+
+.botones {
+    display: inline-block;
 }
 
 #porkmalo {
