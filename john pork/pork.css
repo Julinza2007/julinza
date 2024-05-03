@@ -11,3 +11,27 @@ body{
     color:salmon;
     text-align: center;
 }
+
+#aceptar {
+margin-left: 650px;
+display:inline-block;
+}
+
+
+#aceptar img {
+    border-radius: 60px;
+}
+
+#colgar {
+    margin-left: 425px;
+    display:inline-block;
+}
+
+#porkmalo {
+    text-align:center;
+}
+
+#porkmalo img{
+    width: 1850px;
+    height: 900px;
+}
