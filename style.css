@@ -89,13 +89,48 @@ body {
     transform: scale(1.2);
 }
 
-a{
-    margin-left:10px;
+.contenedor-enlaces {
+    display: flex; /* Utiliza flexbox para alinear los enlaces en la misma línea */
+    justify-content: space-between; /* Distribuye los elementos a lo largo de la línea */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-top: 20px; /* Espacio superior entre el contenedor y los enlaces */
 }
-a img{
+
+.enlaces {
+    display: inline-block;
+}
+
+#cerdo {
+    margin-left:10px;
+ }
+
+#cerdo img {
     transition: transform 1s ease;
 }
 
-a img:hover{
+#cerdo img:hover {
     transform: scale(1.9);
 }
+
+#goku{
+    margin-right:10px;
+    background-image: url(2.jpg);
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 500ms ease-out;
+    width:120px; 
+    height:300px;
+}
+
+
+#goku:hover {
+    background-image: url(1.gif);
+    transform: scale(1.2);
+}
+.enlaces a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+

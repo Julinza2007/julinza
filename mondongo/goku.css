@@ -1,0 +1,27 @@
+body {
+background-color: black;
+    }
+
+    
+    #goku_gif {
+        text-align:center;
+        margin-top: 90px;
+    }
+    
+    #goku_gif img {
+        width: 1300px;
+        height: 800px;
+        border-radius:100px;
+    }
+
+    #akira {
+        margin-top:1000px;
+        text-align:center;
+    } 
+
+
+    #akira img{
+        width: 325px;
+        height: 250px;
+        border-radius:30px;
+    }
