@@ -1,0 +1,15 @@
+body {
+background-image: url(https://e1.pxfuel.com/desktop-wallpaper/125/945/desktop-wallpaper-meme-backgrounds-meme-computer.jpg);
+background-color: rgba(0, 0, 0, 0.5); /* Color de fondo oscuro semitransparente */
+background-blend-mode: overlay; /* Mezcla el color de fondo con la imagen */
+}
+
+#porkbueno {
+    text-align:center;
+    margin-top: 90px;
+}
+
+#porkbueno img {
+    width: 1300px;
+    height: 800px;
+}
