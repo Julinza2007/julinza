@@ -19,6 +19,8 @@ margin-left: 650px;
 
 #aceptar img {
     border-radius: 60px;
+    background-blend-mode: overlay;
+    background-color: black;
 }
 
 #colgar {
@@ -36,4 +38,12 @@ margin-left: 650px;
 #porkmalo img{
     width: 1850px;
     height: 900px;
+}
+
+a img{
+    transition: transform 1s ease;
+}
+
+a img:hover{
+    transform: scale(1.2);
 }
