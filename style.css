@@ -1,29 +1,36 @@
 body {
-    background-color: #000; /* Color de fondo negro */
+    background-color: black;
+}
+.container {
+  inset: 0;
+  position: fixed;
+  z-index: -1;
 }
 
-/* Estrella */
-.star {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background-color: #fff; /* Color de las estrellas blanco */
-    opacity: 0; /* Inicialmente invisible */
-    border-radius: 50%; /* Forma redondeada */
-    animation: parpadeo-estrellas 3s infinite; /* Animación de parpadeo */
+.space {
+  --size: 2px;
+  --space-layer: 
+    4vw 50vh 0 #fff,
+    18vw 88vh 0 #fff,
+    73vw 14vh 0 #fff;
+  
+  width: var(--size);
+  height: var(--size);
+  background: white;
+  box-shadow: var(--space-layer);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.75;
 }
 
-/* Animación de parpadeo */
-@keyframes parpadeo-estrellas {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+.space {
+   animation: move var(--duration) linear infinite;
+}
+
+@keyframes move {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100vh); }
 }
 
 .titulo {
@@ -112,7 +119,7 @@ body {
     transform: scale(1.9);
 }
 
-#goku{
+div#goku{
     margin-right:15px;
     background-image: url(2.jpg);
     background-size: cover;
@@ -122,8 +129,7 @@ body {
     height:200px;
 }
 
-
-#goku:hover {
+div#goku:hover {
     background-image: url(1.gif);
     transform: scale(1.2);
 }
@@ -131,6 +137,42 @@ body {
     display: block;
     width: 100%;
     height: 100%;
+}
+
+@media (max-width: 768px) {
+    div#pessi img{
+        width: 250px;
+        height: 200px;
+    }
+
+    div.pessi img{
+        width: 250px;
+        height: 200px;
+    }
+    
+    div#ñessi img{
+        width: 250px;
+        height: 200px;
+    }
+    
+    div#mechikito img{
+        width: 250px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+      div#goku{
+       margin-right: 2px;
+
+       width: 100px;
+       height: 150px;
+    }
+    
+    div#cerdo{
+        margin-top: 90px;
+        margin-left: 15px;
+    }
 }
 
 

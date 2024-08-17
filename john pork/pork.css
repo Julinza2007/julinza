@@ -12,32 +12,35 @@ body{
     text-align: center;
 }
 
-#aceptar {
-margin-left: 650px;
-}
-
-
-#aceptar img {
+div.botones img#aceptar{
     border-radius: 60px;
     background-blend-mode: overlay;
     background-color: black;
 }
 
-#colgar {
-    margin-left: 440px;
+div.botones a img#aceptar{
+  margin-left: 750px;
+  width: 60px;
+  height: 60px;
+}
+
+div.botones a img#colgar{
+    margin-left: 200px;
+    width: 60px;
+    height: 60px;
 }
 
 .botones {
     display: inline-block;
 }
 
-#porkmalo {
+.pork {
     text-align:center;
 }
 
-#porkmalo img{
-    width: 1850px;
-    height: 900px;
+div.pork img{
+    width: 1000px;
+    height: 500px;
 }
 
 a img{
@@ -46,4 +49,79 @@ a img{
 
 a img:hover{
     transform: scale(1.2);
+}
+
+@media (max-width: 1280px) {
+
+    div.botones a img#aceptar{
+        margin-left: 400px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    div.botones a img#colgar{
+        margin-left: 100px;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    div.pork img{
+        width: 80%;
+        height: 80%;
+    }
+
+    div.botones a img#aceptar{
+        margin-left: 310px;
+        width: 29px;
+        height: 29px;
+    }
+    
+    div.botones a img#colgar{
+        margin-left: 50px;
+        width: 30px;
+        height: 30px;
+    }
+
+    body{
+        background-image: linear-gradient(to right, #051327, #000);
+    }
+}
+
+
+@media (max-width: 480px){
+    div.pork img{
+        width: 80%;
+        height: 80%;
+    }
+
+    div.botones a img#aceptar{
+        margin-left: 175px;
+        width: 29px;
+        height: 29px;
+    }
+    
+    div.botones a img#colgar{
+        margin-left: 50px;
+        width: 30px;
+        height: 30px;
+    }
+
+    body{
+        background-image: linear-gradient(to right, red, #000);
+    }
+
+    
+}
+
+
+div#porkmalo{
+    text-align: center;
+}
+
+div#porkmalo img{
+    width: 1800px;
+    height: 900px;	
 }

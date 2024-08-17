@@ -13,3 +13,13 @@ background-blend-mode: overlay; /* Mezcla el color de fondo con la imagen */
     width: 1300px;
     height: 800px;
 }
+@media (max-width: 768px){
+
+    div#porkbueno img{
+        width: 200px;
+        height: 400px
+    }
+
+}
+
+@media (max-width: 480px){}
