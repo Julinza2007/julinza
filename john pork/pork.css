@@ -12,27 +12,28 @@ body{
     text-align: center;
 }
 
-div.botones img#aceptar{
-    border-radius: 60px;
+#container {
+  text-align: center;
+}
+
+
+div#botones a img#aceptar{
+    margin-right: 15%;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
     background-blend-mode: overlay;
     background-color: black;
 }
 
-div.botones a img#aceptar{
-  margin-left: 750px;
-  width: 60px;
-  height: 60px;
-}
-
-div.botones a img#colgar{
-    margin-left: 200px;
+div#botones a img#colgar{
+    border-radius: 100px;
     width: 60px;
     height: 60px;
 }
 
-.botones {
-    display: inline-block;
-}
+
+
 
 .pork {
     text-align:center;
